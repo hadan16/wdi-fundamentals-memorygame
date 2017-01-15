@@ -1,33 +1,31 @@
-console.log("JS file is connected to HTML! Woohoo!")
+// var cardOne = 'queen';
+// var cardTwo = 'queen';
+// var cardThree = 'king';
+// var cardFour = 'king';
 
-// Assignment 8.7: Create four variables that simulates the cards in the game
-
-var cardOne = "queen";
-var cardTwo = "queen";
-var cardThree = "king";
-var cardFour = "king";
-
-// if (cardOne === cardTwo){
-// console.log('You found a match!')
-// }
-// else if (cardThree === cardFour){
-//   console.log('You found a match!')
-// }
-// else if (cardOne === cardThree){
-//   console.log('Sorry, try again.')
-// }
-// else if (cardOne === cardFour){
-//   console.log('Sorry, try again.')
-// }
-// else if (cardTwo === cardThree){
-//   console.log('Sorry, try again.')
-// }
-// else if (cardTwo === cardFour){
-//   console.log('Sorry, try again.')
+// if (cardOne === cardTwo) {
+// 	alert('You found a match!');
+// } else {
+//   alert('Sorry, try again.');
 // }
 
-if (cardOne === cardTwo) {
-	alert('You found a match!');
-} else {
-  alert('Sorry, try again.');
+// find the board and set it to a variable
+// so that we can add cards to it
+var board = document.getElementById('game-board');
+
+// function that will create your board
+function createBoard() {
+  // loop through your cards array to create card elements for your board
+  for (var i=0; i<cards.length; i++) {
+
+    // create a div element which will be used as a card
+    var cardElement = document.createElement('div');
+
+    // add a class to the card element which will help link styling
+    cardElement.className = 'card';
+
+    // append the card to the board
+    board.appendChild(cardElement);
+  }
+
 }
